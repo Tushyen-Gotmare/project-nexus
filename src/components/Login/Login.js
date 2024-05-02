@@ -50,7 +50,7 @@ function Login() {
               <Link to="/signup">Sign up</Link>
             </span>
           </p>
-        <h1 className={styles.heading}>Hello again!!</h1>
+        <h1 className={styles.heading}>Hello again!</h1>
         <p className={styles.DesHead}>Welcome back you've been missed!</p>
         <InputControl className={styles.email}
           label="Email"
