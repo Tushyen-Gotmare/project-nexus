@@ -1,70 +1,142 @@
-.container {
-  height: 100%;
-  min-height: 100vh;
-  width: 100%;
-  background: linear-gradient(to right, #9900ff, #cc80ff);
+
+.LoginImage{
+  background-color: #8e7aea;
+ padding-bottom: 300px;
+}
+.LoginImage img{
+  padding-top: 20%;
+}
+.container{
   display: flex;
+  flex-direction: row;
+
+
+}
+.LoginForm{
+  padding-left: 280px;
+  padding-right: 300px;
   justify-content: center;
-  align-items: center;
+  background-image: url(../Images/purpal.png);
+  background-repeat: no-repeat;
+ align-items: center;
+  background-size: cover;
+  position: relative;
+  left: 100px;
+  
 }
 
-.innerBox {
-  min-width: 480px;
-  height: fit-content;
-  width: fit-content;
-  background-color: #fff;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
-  padding: 30px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+.RegisterCon{
+   padding-top: 40px;
+   text-align: right;
+   font-family: "Plus Jakarta Sans", sans-serif;
+   
+   
 }
-
-.footer {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.InnerBox{
+  padding-right: 340px;
+  padding-top: 190px;
+  padding-left: 400px;
+  
 }
-
-.footer .error {
-  font-weight: bold;
-  font-size: 0.875rem;
-  color: #ff3300;
-  text-align: center;
-}
-
-.footer button {
-  outline: none;
-  border: none;
-  background-color: #9900ff;
-  color: #fff;
-  border-radius: 5px;
-  font-weight: bold;
-  font-size: 1rem;
-  padding: 10px 16px;
-  width: 100%;
-  transition: 100ms;
+.fancy{
+  color: blue;
   cursor: pointer;
 }
-
-.footer button:disabled {
-  background-color: gray !important;
+.heading{
+  font-size: 60px;
+  margin-top: 240px;
 }
-
-.footer button:hover {
-  background-color: #aa2aff;
+.email{
+  width: 19rem;
+  height: 3rem;
+  border: 0;
+  margin-bottom: 20px;
+  border-radius: 10px;
 }
+.pass{
+  width: 19rem;
+  height: 3rem;
+  border: 0;
+  border-radius: 10px;
 
-.footer p {
-  font-weight: 700;
-  color: #000;
 }
+.btn{
+  width: 19rem;
+  height: 3rem;
+  border: 0;
+  border-radius: 4px;
+  background-color: #fe8e69;
+  color: azure;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.heading{
+    margin-bottom: 30px;
+  font-size: 50px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.DesHead{
+  font-size: 30px;
+ 
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin-bottom: 40px;
+ 
+}
+@media (max-width: 768px) {
 
-.footer p span a {
-  font-weight: bold;
-  color: #9900ff;
-  letter-spacing: 1px;
-  font-size: 1rem;
-  text-decoration: none;
+  .container{
+   
+    background-image: url(../Images/purpal.png);
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat; 
+    background-position-y: 200px;
+    padding-bottom: 600px;
+   
+    
+    
+  }
+  .LoginImage {
+    display: none;
+  }
+  .LoginForm{
+    padding: 0;
+    margin: 0;
+    background-image: none;
+    position: relative;
+    top: 200px;
+  }
+  .heading{
+    margin-top: 10%;
+    font-size: 30px;
+    margin-bottom: 2px;
+    text-align: center;
+  }
+  .RegisterCon{
+    text-align: center;
+    padding-top: 0;
+    margin-top: 0;
+    position: relative;
+    top: 400px;
+    
+  }
+  .DesHead{
+    margin-top: 12px;
+    font-size: 14px;
+  }
+  .email{
+    width: 230px;
+    height: 30px;
+  }
+  .pass{
+    width: 230px;
+    height: 30px;
+  }
+  .btn{
+    width: 230px;
+    height: 30px;
+    font-size: 15px;
+  }
 }
